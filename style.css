@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --font1: 'Raleway', sans-serif;
+  --font2: 'Roboto', sans-serif;
+  ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font1);
+}
+
+body {
+  background: #383333;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px;
+  gap: 80px;
+}
+
+form {
+  display: flex;
+  gap: 2rem;
+}
+
+form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+label p {
+  background-color: #DDD;
+  color: #383333;
+  font-weight: 600;
+  padding: 4px;
+  border-radius: 8px 0 0 8px;
+}
+
+label input {
+  height: 100%;
+  outline: none;
+  padding: 4px;
+  border: 0;
+  background: #fff;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: var(--font1);
+}
+
+#btnCopiar {
+  padding: 4px 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  transition: background .2s linear, color .2s linear;
+}
+
+#btnCopiar:hover {
+  background: #383333;
+  color: #fff;
+}
+
+main {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main p {
+  text-indent: 1rem;
+}
+
+@media (width < 780px) {
+  body {
+    padding: 60px;
+    gap: 40px;
+  }
+
+  form {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  form label {
+    justify-content: space-between;
+  }
+
+  label input {
+    width: 100%;
+  }
+
+  #btnCopiar {
+    width: 100px;
+    margin-left: auto;
+  }
+}
